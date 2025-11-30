@@ -8,7 +8,7 @@ const Home = () => {
 
 
     const home = useRef(null)
-    const landing = useRef(null)
+    const page = useRef(null)
     const tl = gsap.timeline()
 
     useGSAP(() => {
@@ -18,7 +18,7 @@ const Home = () => {
             ease: Power4,
             y: "-200%"
         })
-        .from(landing.current,{
+        .from(page.current,{
             scale:1.2,
             duration:1,
             delay:-1.2,
@@ -33,7 +33,7 @@ const Home = () => {
             <div ref={home} className='h-screen w-full bg-[#111] z-10 fixed'>
             </div>
 
-            <div ref={landing} className=' w-full min-h-screen'>
+            <div ref={page} className=' w-full min-h-screen'>
                 <Navbar />
                 <Hero />
             </div>
