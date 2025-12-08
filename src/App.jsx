@@ -8,7 +8,7 @@ const App = () => {
   return (
 
     <div className='h-screen bg-black'>
-      <Menupage/>
+      {/* <Menupage/> */}
       <Loader />
       <Home />
     </div>
