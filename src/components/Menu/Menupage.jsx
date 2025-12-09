@@ -1,12 +1,28 @@
 import React from 'react'
 import Menuleft from './Menuleft'
 import Menuright from './Menuright'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { useRef } from 'react'
 
-const Menupage = () => {
+const Menupage = (props) => {
+
+const Menu = useRef(null)
+
+useGSAP(() => {
+  if (props.Menu) {
+    gsap.to(Menu.current, {
+      top: 0,
+      duration: 0.6,
+      ease: "power3.out"
+    });
+  } 
+}, [props.Menu]); 
+
   return (
-    <div className='bg-[#111] fixed top-0 h-screen flex w-full z-[5]'>
+    <div ref={Menu} className='bg-[#111] fixed top-full h-screen flex w-full z-[7]'>
       <Menuleft/>
-      <Menuright/>
+      <Menuright Menu={props.Menu} setMenu={props.setMenu} />
     </div>
   )
 }

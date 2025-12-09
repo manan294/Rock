@@ -4,7 +4,7 @@ import Hero from './Hero'
 import { useGSAP } from '@gsap/react'
 import gsap, { Power4 } from 'gsap/all'
 
-const Home = () => {
+const Home = (props) => {
 
 
     const home = useRef(null)
@@ -27,14 +27,13 @@ const Home = () => {
 
 
     })
-
     return (
         <div className='h-screen z-50 bg-tranparent overflow-hidden'>
             <div ref={home} className='h-screen w-full bg-[#111] z-10 fixed'>
             </div>
 
             <div ref={page} className=' w-full min-h-screen'>
-                <Navbar />
+                <Navbar Menu={props.Menu} setMenu={props.setMenu}/>
                 <Hero />
             </div>
         </div>

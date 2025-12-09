@@ -37,7 +37,7 @@ useGSAP(()=>{
           <h3 ref={ArText} className='text-white sm:text-[20rem] text-8xl font-black tracking-tight leading-none font-[ArockFontU8]'>AROCK</h3>
         </div>
 
-        <div className=' w-full flex justify-between items-center text-white -mt-7 sm:-mt-12 h-20'>
+        <div className=' w-full flex justify-between items-center text-white -mt-35 sm:-mt-12 h-20'>
 
           <div className='flex gap-3'>
             <i className="ri-play-circle-line sm:text-[1.6vw]"></i>
