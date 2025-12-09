@@ -16,14 +16,14 @@ const Menuleft = () => {
     }, []);
 
     return (
-        <div className='hidden sm:flex sm:w-2/3 h-screen sm:py-14 sm:px-25 relative'>
+        <div className='hidden sm:flex sm:w-2/3 h-screen sm:py-4 sm:px-10 relative'>
             <div ref={tiltRef} className='h-full relative w-full'>
-                <img className='absolute opacity-5 scale-[0.98] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
-                <img className='absolute opacity-10 scale-[0.93] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
-                <img className='absolute opacity-20 scale-[0.87] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
-                <img className='absolute opacity-30 scale-[0.82] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
-                <img className='absolute opacity-40 scale-[0.75] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
-                <img className='absolute opacity-50 object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
+                <img ref={tiltRef} className='absolute opacity-5 scale-[0.98] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
+                <img ref={tiltRef} className='absolute opacity-10 scale-[0.93] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
+                <img ref={tiltRef} className='absolute opacity-20 scale-[0.87] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
+                <img ref={tiltRef} className='absolute opacity-30 scale-[0.82] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
+                <img ref={tiltRef} className='absolute opacity-40 scale-[0.75] object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
+                <img ref={tiltRef} className='absolute opacity-50 object-cover h-full w-full' src="https://images.prismic.io/arock-website-2023/9ef06a29-91de-4fb2-bb2a-2d208f8fcc2a_AROCK-_1497.jpg?fm=webp&q=100&fit=crop" alt="" />
             </div>
         </div>
     );
